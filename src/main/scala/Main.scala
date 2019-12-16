@@ -48,7 +48,7 @@ object Main {
     val jsonStr = """{"Qux":{"i":13,"d":14.0}}"""
 
     println(s"Calling Scala2.processJson with $jsonStr (it used circe auto derivation).")
-    val r = processJson(jsonStr)
+    val r = Scala2.processJson(jsonStr)
 
     println("Result from scala2 code: " + r.toString)
   }
