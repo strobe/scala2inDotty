@@ -10,7 +10,7 @@ lazy val commonDeps = Seq(
     )
 
 lazy val scala2root = project
-  .in(file("scala2src"))
+  .in(file("scala2"))
   .settings(
     name := "scala2 module for dotty",
     version := "0.1.0",
