@@ -19,21 +19,3 @@ object Scala2 {
     decode[Foo](json)
 
 }
-
-object Main {
-
-  import Scala2._
-
-  def main(args: Array[String]): Unit = {
-    println("I was compiled as scala2")
-
-    val foo: Foo = Qux(13, Some(14.0))
-
-    val json = foo.asJson.noSpaces
-    println(json)
-
-    val decodedFoo = decode[Foo](json)
-    println(decodedFoo)
-  }
-
-}
